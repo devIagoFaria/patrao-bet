@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad_bronze_2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c2d13" />
+      <stop offset="100%" stop-color="#a1501f" />
+    </linearGradient>
+    <filter id="glow_bronze_2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Outer glowing border -->
+  <circle cx="50" cy="50" r="45" fill="url(#bgGrad_bronze_2)" stroke="#c07030" stroke-width="3" filter="url(#glow_bronze_2)" />
+  <!-- Inner ring for depth -->
+  <circle cx="50" cy="50" r="39" fill="none" stroke="rgba(0,0,0,0.3)" stroke-width="2" />
+  
+  <!-- Central Icon -->
+  <path d="M50 15 l10 22 l24 3 l-17 17 l4 24 l-21 -12 l-21 12 l4 -24 l-17 -17 l24 -3 Z" fill="#d97706" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
+  
+  <!-- Level Badge Indicator -->
+  <circle cx="50" cy="78" r="11" fill="#161619" stroke="#c07030" stroke-width="1.5" />
+  <text x="50" y="82" fill="#ffffff" font-size="12" font-family="System, sans-serif" font-weight="900" text-anchor="middle">2</text>
+</svg>
